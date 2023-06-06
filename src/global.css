@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --dark: hsla(28, 70%, 10%, 1);
+    --primary: hsla(0, 0%, 91%, 1);
+    --primary-dark: hsla(0, 0%, 78%, 1);
+    --secondary: hsla(29, 54%, 35%, 1);
+    --secondary-light: hsl(29 68% 65%);
+    --secondary-dark: hsl(29 38% 27%);
+    --secondary-analogous: hsla(28, 54%, 35%, 1);
+    --accent: hsl(176, 58%, 19%, 1);
+    --accent-light: hsl(176, 64%, 22%, 1);
+    --accent-analogous: hsl(180, 72%, 21%, 1);
+}
+.dark {
+    --primary: 1;
+    --primary-dark: 2;
+    --primary-light: 3;
+    --secondary: 1;
+    --secondary-dark: 2;
+    --secondary-light: 3;
+    --accent: 1;
+    --accent-dark: 2;
+    --accent-light: 3;
+}
