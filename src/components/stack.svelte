@@ -16,7 +16,7 @@
     ];
 </script>
 <!-- tilt back the icons on wider screens -->
-<section class="flex flex-col flex-1 text-center items-center my-auto gap-2">
+<section id="STACK" class="flex flex-col flex-1 text-center items-center my-auto gap-2">
     <header class="text-[2rem] ">TECH STACK</header>
     <div class="grid grid-cols-4 grid-rows-3 gap-1 ">
         {#each techStack as stack (stack.alt)}

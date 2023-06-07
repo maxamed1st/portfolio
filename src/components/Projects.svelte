@@ -1,7 +1,7 @@
 <script>
     import Card from "../lib/Card.svelte";
 </script>
-<seciton class="flex flex-col items-center sm:flex-row sm:justify-center gap-4 p-5 bg-[var(--primary-dark)] ">
+<seciton id="PROJECTS" class="flex flex-col items-center sm:flex-row sm:justify-center gap-4 p-5 bg-[var(--primary-dark)] ">
     <Card>
         <h1 slot=title> Title </h1>
         <img slot=image src="src/assets/svelte.svg" alt="svelte" class="aspect-video object-contain" />
