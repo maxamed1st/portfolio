@@ -25,3 +25,6 @@
     --accent-dark: 2;
     --accent-light: 3;
 }
+body {
+    background-color: var(--primary-dark);
+}
