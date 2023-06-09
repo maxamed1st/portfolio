@@ -1,32 +1,17 @@
 <script>
-    import { each } from "svelte/internal";
-    let techStack = [
-        { src: "src/assets/html5.svg", alt: "html5" },
-        { src: "src/assets/css3.svg", alt: "css3" },
-        { src: "src/assets/tailwindCSS.svg", alt: "tailwindCSS" },
-        { src: "src/assets/python.svg", alt: "python" },
-        { src: "src/assets/javascript.svg", alt: "javascript" },
-        { src: "src/assets/react.svg", alt: "react" },
-        { src: "src/assets/svelte.svg", alt: "svelte" },
-        { src: "src/assets/nextdotjs.svg", alt: "nextJS" },
-        { src: "src/assets/npm.svg", alt: "npm" },
-        { src: "src/assets/git.svg", alt: "git" },
-        { src: "src/assets/github.svg", alt: "github" },
-        { src: "src/assets/webpack.svg", alt: "webpack" },
-    ];
+    import Icons from "../assets/Icons.svelte";
 </script>
-<!-- tilt back the icons on wider screens -->
-<section id="STACK" class="flex flex-col flex-1 text-center items-center my-auto gap-2">
-    <header class="text-[2rem] ">TECH STACK</header>
-    <div class="grid grid-cols-4 grid-rows-3 gap-1 ">
-        {#each techStack as stack (stack.alt)}
-            <img src={stack.src} alt={stack.alt} class="h-16 w-16 p-1" />
-        {/each}
-    </div>
+<section id="STACK" class="grid grid-cols-4 grid-rows-3 aspect-square scale-50 gap-4 flex-1">
+        <Icons i="html" fill="#E34F26" />
+        <Icons i="css" fill="#1572B6" />
+        <Icons i="tailwind" fill="#dd6f41" />
+        <Icons i="python" fill="#3776AB" />
+        <Icons i="javascript" fill="#F7DF1E" />
+        <Icons i="svelte" fill="#FF3E00" />
+        <Icons i="react" fill="#61DAFB" />
+        <Icons i="nextjs" fill="#000000" />
+        <Icons i="git" fill="#F05032" />
+        <Icons i="github" fill="#181717" />
+        <Icons i="npm" fill="#CB3837" />
+        <Icons i="webpack" fill="#8DD6F9" />
 </section>
-
-<style>
-    img {
-        transform: rotateX(50deg);
-    }
-</style>
