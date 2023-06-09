@@ -1,5 +1,5 @@
 <script>
-  import Nav from "./components/nav.svelte";
+  import Nav from "./components/Nav.svelte";
   import Header from "./components/Header.svelte";
   import Projects from "./components/Projects.svelte";
   import Footer from "./components/Footer.svelte";
