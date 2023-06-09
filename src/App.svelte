@@ -1,8 +1,8 @@
 <script>
   import Nav from "./components/nav.svelte";
-  import Header from "./components/header.svelte";
+  import Header from "./components/Header.svelte";
   import Projects from "./components/Projects.svelte";
-    import Footer from "./components/Footer.svelte";
+  import Footer from "./components/Footer.svelte";
 </script>
 <Nav />
 <Header />
