@@ -1,5 +1,5 @@
 <script>
-  import Stack from "./Stack.svelte";
+  import Stack from "./stack.svelte";
 </script>
 <header class="flex justify-items-center bg-[var(--secondary)] text-[var(--primary-dark)] p-5 sm:h-96 lg:h-[500px]">
   <Stack />
