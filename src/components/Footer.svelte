@@ -1,17 +1,20 @@
 <script>
-    const icons = [
-        {"src" : "src/assets/linkedin.svg", "link" : "https://www.linkedin.com/in/mohamed-hassan-ahmed-b629447a/"},
-        {"src" : "src/assets/github.svg", "link" : "https://github.com/maxamed1st"},
-        {"src" : "src/assets/email.svg", "link" : "mailto:maxamed1st@gmail.com", "target" : "top_"},
-        ]
+    import Icons from "../assets/Icons.svelte";
 </script>
-<footer class="flex flex-col gap-4 items-center text-center bg-[var(--secondary)] text-[var(--primary)] p-10 w-full">
-    <div> Connect with <span class="text-[var(--primary-dark)]"> Mohamed Hassan Ahmed </span> </div>
+<footer class="flex flex-col gap-10 items-center justify-center bg-[var(--secondary)] text-[var(--primary)] p-10 w-full h-96">
+    <div class="text-7xl"> CONNECT </div>
     <div id="CONTACT" class="flex gap-10">
-        {#each icons as icon, index (index)}
-            <a href={icon.link} target={icon?.target}> 
-                <img src={icon.src} alt={icon.link} class="aspect-square object-contain w-5 h-5 hover:scale-150" /> 
-            </a>
-        {/each}
-</div>
+        <a href="https://www.linkedin.com/in/mohamed-hassan-ahmed-b629447a/" class="flex-1 w-16 h-16 sm:w-24 sm:h-24 hover:scale-150"> 
+            <Icons i="linkedin" fill=#0A66C2 cls="w-ful h-full flex-1"/>
+        </a>
+        <a href="https://github.com/maxamed1st" class="flex-1 w-16 h-16  sm:w-24 sm:h-24 hover:scale-150"> 
+            <Icons i="github" fill=#181717/>
+        </a>
+        <a href="https://discord.com/channels/mo#5372" class="flex-1 w-16 h-16  sm:w-24 sm:h-24 hover:scale-150"> 
+            <Icons i="discord" fill=#5865F2/>
+        </a>
+        <a href="mailto:maxamed1st@gmail.com" class="flex-1 w-16 h-16  sm:w-24 sm:h-24 hover:scale-150"> 
+            <Icons i="email" />
+        </a>
+    </div>
 </footer>
