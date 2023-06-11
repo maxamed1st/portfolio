@@ -28,13 +28,8 @@ jobs:
     - name: Build with with vite
       run: npm run build
 #deploy the build folder
-    - name: stage build folder
-      run: git add -f dist
-    - name: unstage index.html
-      run: git reset dist/index.html
-    - name: commit
-      run: git commit -m "commit build folder"
-    - name: sync with the deployment repository
-      run: git pull --rebase -Xours origin pages
-    - name: deploy the update
-      run: git subtree push --prefix dist origin pages
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3.9.3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
