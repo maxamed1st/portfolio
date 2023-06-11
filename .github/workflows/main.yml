@@ -29,7 +29,7 @@ jobs:
       run: npm run build
 #fix broken links before deployment
     - name: link to assets with relative path
-      run: sed -i 's_\/assets_./assets_g' dist/index.html
+      run: sed -i 's_/assets_./assets_g' dist/index.html
 #deploy the build folder
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.9.3
