@@ -32,5 +32,7 @@ jobs:
       run: git add -f dist
     - name: commit
       run: git commit -m "commit build folder"
+    - name: sync with the deployment branch
+      run: git pull --rebase
     - name: push to github pages
       run: git subtree push --prefix dist origin pages
