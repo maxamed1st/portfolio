@@ -14,8 +14,8 @@
             Repellendus accusamus laboriosam quae quia aspernatur? 
             Officia itaque, unde laudantium iste fugiat eius dolor aut eos quia autem ex minus ab esse!
          </p>
-        <div slot=demo> Demo </div>
-        <div slot=github> Repository </div>
+        <span slot=demo  > DEMO </span>
+        <span slot=github  > CODE </span>
     </Card>
     <Card>
         <h1 slot=title> Title </h1>
@@ -28,8 +28,8 @@
             Repellendus accusamus laboriosam quae quia aspernatur? 
             Officia itaque, unde laudantium iste fugiat eius dolor aut eos quia autem ex minus ab esse!
          </p>
-        <div slot=demo> Demo </div>
-        <div slot=github> Repository </div>
+         <span slot=demo  > DEMO </span>
+         <span slot=github  > CODE </span>
     </Card>
     <Card>
         <h1 slot=title> Title </h1>
@@ -42,7 +42,7 @@
             Repellendus accusamus laboriosam quae quia aspernatur? 
             Officia itaque, unde laudantium iste fugiat eius dolor aut eos quia autem ex minus ab esse!
          </p>
-        <div slot=demo> Demo </div>
-        <div slot=github> Repository </div>
+         <span slot=demo  > DEMO </span>
+         <span slot=github  > CODE </span>
     </Card>
 </seciton>
