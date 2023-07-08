@@ -1,17 +1,18 @@
 <script>
+    import Home from "../assets/Home.svelte";
     let links = ["STACK", "PROJECTS", "ABOUT", "CONTACT"];
     let isHidden = true;
-    //coditionally change the value of isHidden based on media quaries
+    //conditionally change the value of isHidden based on media queries
     let toggleHidden = () => {
         const mediaQuery = window.matchMedia("(max-width: 640px)");
         if(mediaQuery.matches) return isHidden = !isHidden
     };
 </script>
 
-<nav class="bg-[--secondary-dark]  text-center min-w-min ">
+<nav id="index" class="bg-[--secondary-dark]  text-center min-w-min ">
     <ul class="flex gap-1 text-2xl relative">
         <li class="mr-auto ">
-            <a href="/"> 💆🏾‍♂️ </a> 
+            <a href="#index"> <Home /> </a>
         </li>
         <!-- Hamburger menu -->
         <li 
@@ -26,7 +27,7 @@
                 <div><hr></div>
                 <div><hr></div>
             </div>
-            <!-- align hamburger menu whith dropdown menu -->
+            <!-- align hamburger menu with dropdown menu -->
             <div class={`${isHidden ? "hidden" : "flex" } w-36`}> </div>
         </li>
         <!-- navbar items -->
