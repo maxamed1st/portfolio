@@ -3,7 +3,7 @@
     <header class="font-thin">
         <slot name="title"></slot>
     </header>
-    <main class="font-light break-all pb-2">
+    <main class="font-light break-all h-20 pb-2">
         <slot name="description"> No description </slot>
     </main>
     <hr class="text-[var(--secondary)] mb-2" />
